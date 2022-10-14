@@ -1,0 +1,15 @@
+import numpy as np
+
+#TANH
+def tanh(x):
+    return np.tanh(x)
+
+def tanh_prime(x):
+    return 1-np.tanh(x)**2
+
+#SIGMOID
+def sigmoid(x):
+    return (1 / (1 + np.exp(-x)))
+
+def sigmoid_prime(x):
+    return (np.exp(-x) / (1+np.exp(-x))**2)
